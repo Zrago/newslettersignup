@@ -8,8 +8,9 @@
   <body>
     <div class="signUp">
 <h2>Nyhestbrev på Epost</h2>
-<input type="email" name="name" value=" " placeholder="E-post" />
-<button id="Meld" onclick="visMelding()">Meld På</button></div>
+<form id=emailForm name=emailForm method=post action="/signUp">
+  <input type="email" name="email" value=" " placeholder="E-post" />
+<button id="Meld" type="submit">Meld På</button></form></div>
 <script>
 function visMelding() {
     alert("Du er nå på meldt nyhetsbrev!");
